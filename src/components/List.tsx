@@ -8,7 +8,7 @@ interface ListProps<T> {
 const List = <T,>({ items, render }: ListProps<T>) => {
     return (
         <ul>
-            {items.map((item, i) => (
+            {items?.map((item, i) => (
                 <li key={i}>
                     {render(item)}
                 </li>
